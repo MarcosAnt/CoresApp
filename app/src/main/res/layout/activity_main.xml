@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.marcos.coresapp.MainActivity">
+
+    <TextView
+        android:id="@+id/tvVermelho"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="21dp"
+        android:text="Vermelho"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium" />
+
+    <SeekBar
+        android:id="@+id/skVermelho"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tvVermelho"
+        android:layout_below="@+id/tvVermelho"
+        android:layout_marginTop="14dp"
+        android:max="255" />
+
+    <TextView
+        android:id="@+id/tvVerde"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/skVermelho"
+        android:layout_below="@+id/skVermelho"
+        android:layout_marginTop="23dp"
+        android:text="Verde"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium" />
+
+    <SeekBar
+        android:id="@+id/skVerde"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tvVerde"
+        android:layout_below="@+id/tvVerde"
+        android:layout_marginTop="15dp"
+        android:max="255" />
+
+    <TextView
+        android:id="@+id/tvAzul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/skVerde"
+        android:layout_below="@+id/skVerde"
+        android:layout_marginTop="22dp"
+        android:text="Azul"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium" />
+
+    <SeekBar
+        android:id="@+id/skAzul"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tvAzul"
+        android:layout_below="@+id/tvAzul"
+        android:layout_marginTop="16dp"
+        android:max="255" />
+
+    <TextView
+        android:id="@+id/tvOutput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/skAzul"
+        android:layout_below="@+id/skAzul"
+        android:layout_marginTop="38dp"
+        android:text=" "
+        android:textAppearance="@android:style/TextAppearance.Material.Medium" />
+
+    <TextView
+        android:id="@+id/tvColor"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tvOutput"
+        android:layout_marginTop="13dp" />
+
+</android.widget.RelativeLayout>
